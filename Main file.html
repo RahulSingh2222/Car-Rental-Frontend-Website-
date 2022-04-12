@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Car Rental</title>
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="logo 1.jpg" height="200">
+    <ul>
+      <li><a href="Main file.html">Home</a></li>
+      <li><a href="About us.html">About Us</a></li>
+      <li><a href="#contactt">Contact Us</a></li>
+      <li><a href="partner.html">Our Partner</a></li>
+    </ul>
+
+    <button class="block" onclick="openForm()">Sign Up / Login</button>
+
+  </nav>
+
+  <div>
+    <div class="form-popupp" id="myFormm">
+      <div class="oneplus">
+        <div class="title-text">
+          <div class="title login">
+            Login Form
+          </div>
+          <div class="title signup">
+            Signup Form
+          </div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="#" class="login">
+              <div class="field">
+                <input placeholder="Enter Your Email Address" type="email" required autofocus>
+                <div>
+
+                </div>
+              </div>
+              <div class="field">
+                <input type="password" class="form-control" placeholder="Password" id="Password" required
+                  data-validation-required-message="Please enter your password" autocomplete="off" minlength="8">
+
+                <span class="fa fa-eye" aria-hidden="true" type="button" id="eye">
+
+              </div>
+              <div class="pass-link">
+                <a href="#">Forgot password?</a>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login">
+              </div>
+              <div class="signup-link">
+                Not a member? <a href="">Signup now</a>
+              </div>
+            </form>
+            <form action="#" class="signup">
+              <div class="field">
+                <input type="text" placeholder="First Name" required>
+              </div>
+
+              <div class="field">
+                <input type="text" placeholder="Last Name" required>
+              </div>
+              <div class="field">
+                <input placeholder="Enter Your Email Address" type="email" required autofocus>
+              </div>
+              <div class="field">
+                <input type="tel" placeholder="Your Phone Number" class="form-control" id="phone" required
+                  autocomplete="off" required maxlength="10" pattern="\d{10}" title="Please enter exactly 10 digits" />
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" minlength="8" id="password" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Confirm password" minlength="8" id="confirm_password" required>
+              </div>
+
+              <div class="tacbox">
+                <input id="checkbox" type="checkbox" required>
+                <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Signup">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+    </div>
+  </div>
+
+  <section class="home" id="home">
+
+
+    <h3><u>find your car</u></h3>
+
+    <img src="home-img.png" width="1000px">
+
+
+    <button class="Button"><a href="#ride">Book Now</a></button>
+
+  </section>
+
+  <div class="slider">
+    <h1 class="photo"><u>Some Famous And Most Used Car </u></h1>
+    <div class="slides">
+
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
+      <input type="radio" name="radio-btn" id="radio6">
+      <input type="radio" name="radio-btn" id="radio7">
+      <input type="radio" name="radio-btn" id="radio8">
+      <input type="radio" name="radio-btn" id="radio9">
+      <input type="radio" name="radio-btn" id="radio10">
+      <input type="radio" name="radio-btn" id="radio11">
+      <input type="radio" name="radio-btn" id="radio12">
+      <input type="radio" name="radio-btn" id="radio13">
+      <input type="radio" name="radio-btn" id="radio14">
+      <input type="radio" name="radio-btn" id="radio15">
+
+      <div class="slide first">
+        <img src="1.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="2.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="3.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="4.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="5.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="6.webp" alt="">
+      </div>
+      <div class="slide">
+        <img src="7.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="8.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="9.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="10.jpg" alt="">
+      </div>
+      <div class="slide ">
+        <img src="11.webp" alt="">
+      </div>
+      <div class="slide">
+        <img src="12.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="13.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="14.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="15.webp" alt="">
+      </div>
+
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+        <div class="auto-btn5"></div>
+        <div class="auto-btn6"></div>
+        <div class="auto-btn7"></div>
+        <div class="auto-btn8"></div>
+        <div class="auto-btn9"></div>
+        <div class="auto-btn10"></div>
+        <div class="auto-btn11"></div>
+        <div class="auto-btn12"></div>
+        <div class="auto-btn13"></div>
+        <div class="auto-btn14"></div>
+        <div class="auto-btn15"></div>
+      </div>
+
+    </div>
+
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+      <label for="radio6" class="manual-btn"></label>
+      <label for="radio7" class="manual-btn"></label>
+      <label for="radio8" class="manual-btn"></label>
+      <label for="radio9" class="manual-btn"></label>
+      <label for="radio10" class="manual-btn"></label>
+      <label for="radio11" class="manual-btn"></label>
+      <label for="radio12" class="manual-btn"></label>
+      <label for="radio13" class="manual-btn"></label>
+      <label for="radio14" class="manual-btn"></label>
+      <label for="radio15" class="manual-btn"></label>
+    </div>
+  </div>
+
+
+
+  <div class="mai">
+    <section class="ride" id="ride">
+      <div class="heading">
+        <span>How Its Work </span>
+        <h1>Rent With 3 Easy Step</h1>
+      </div>
+      <div class="ride-container">
+        <div class="box ">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <h3 class="h22"><u>Choose A Location</u></h3>
+          <p class="p1">Select The Location Where You Want To Go.</p>
+        </div>
+
+        <div class="box ">
+          <i class="fa-solid fa-calendar-lines-pen"></i>
+          <h3 class="h22"><u> Pick Up Date </u></h3>
+          <p class="p1">Pick The Staring And Ending Time / Date Of Your Journey.</p>
+
+        </div>
+
+        <div class="box " id="box">
+
+          <i class="fa-solid fa-car-on"></i>
+          <h3 class="h22"><u>Book A Car</u></h3>
+          <p class="p1">Then Click On Sumbit To Select The Car Of Your Choice </p>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div class="yoo">
+    <form action="valuee.html">
+      <div class="input-box">
+        <span>Location</span>
+        <input type="search" name="" id="" placeholder="Search Places" required>
+      </div>
+      <div class="input-box">
+        <span>Pick-up Date</span>
+        <input type="datetime-local" class="form-control col-md-6" name="book" required>
+      </div>
+
+      <div class="input-box">
+        <span>Return Date</span>
+        <input type="datetime-local" class="form-control col-md-6" name="book1" required>
+      </div>
+
+      <input type="submit" class="btn">
+
+    </form>
+
+
+    <div>
+      <span>
+        <p class="destination">Some Popular Destinations,&nbsp; <a href="popular destination.html">Click Here </a>
+          &nbsp;To Check.</p>
+      </span>
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <section class="services" id="services">
+
+    <h1 class="headingg"> Our Services</h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <i class="fas fa-car"></i>
+        <h3>car selling</h3>
+        <p>Affordability at your fingertip.<br> High-tech Performance at Low-Tech value <br> Speed up the Future.</p>
+
+      </div>
+
+      <div class="box">
+        <i class="fas fa-tools"></i>
+        <h3>parts repair</h3>
+        <p>Our Service is the Key to a Fresh Start<br> We are every where......</p>
+
+      </div>
+
+      <div class="box">
+        <i class="fas fa-car-crash"></i>
+        <h3>car insurance</h3>
+        <p>Your insurance geek for life don’t worry, Enjoy your Ride.</p>
+
+      </div>
+
+      <div class="box">
+        <i class="fas fa-gas-pump"></i>
+        <h3>oil change</h3>
+        <p>We understand your issues<br>
+          Always there for you<br>
+          Helping you to get better<br>
+          don’t worry we are here<br>
+          save your time with us<br></p>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-headset"></i>
+        <h3>24/7 support</h3>
+        <p>Expert Solutions, Outstanding Service. <br> Customer Support Is Not A Service, It’s an Attitude..</p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="containerharsh">
+
+    <h1 class="our"><u>What Our Customer Say's</u></h1>
+
+    <input type="radio" name="dot" id="one">
+    <input type="radio" name="dot" id="two">
+    <div class="main-card">
+      <div class="cards">
+        <div class="card">
+          <div class="content">
+            <div class="img">
+              <img src="g1.webp" alt="">
+
+            </div>
+            <div class="details">
+              <div class="name">Lana</div>
+              <div class="job">Nice Services They Provide</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="content">
+            <div class="img">
+              <img src="b2.jpg" alt="">
+            </div>
+            <div class="details">
+              <div class="name">Elon musk</div>
+              <div class="job">Exellent, I want To Invest In It</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="img">
+              <img src="g3.jpg">
+            </div>
+            <div class="details">
+              <div class="name">kylie jenner</div>
+              <div class="job">Wonderfull Service</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="content">
+            <div class="img">
+              <img src="b3.jpg">
+            </div>
+            <div class="details">
+              <div class="name">Bill gates</div>
+              <div class="job">Fab Guys</div>
+            </div>
+
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="img">
+              <img src="g2.jpg">
+            </div>
+            <div class="details">
+              <div class="name">Billie eilish</div>
+              <div class="job">Lit Yrrrr</div>
+            </div>
+
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="img">
+              <img src="b1.jpg">
+            </div>
+            <div class="details">
+              <div class="name">Jonson</div>
+              <div class="job">Guys To Good</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <label for="one" class=" active one"></label>
+      <label for="two" class="two"></label>
+    </div>
+  </div>
+
+  <div class="containera">
+    <form id="contactt">
+      <h2 class="h2">Contact Us</h2>
+      <div>
+        <input placeholder=" Enter Your Name" type="text" tabindex="1" required >
+      </div>
+
+      <div>
+        <input placeholder=" Enter Your Last Name" type="text" tabindex="1" required >
+      </div>
+
+      <div>
+        <input placeholder=" Enter Your Email Address" type="email" tabindex="2" required >
+      </div>
+
+      <div>
+        <input placeholder="Your Phone Number" type="tel" tabindex="3" required maxlength="10" pattern="\d{10}"
+          title="Please enter exactly 10 digits" />
+      </div>
+
+      <div>
+        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+      </div>
+
+      <div>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <h2 class="h"><u>OUR CREATIVE TEAM</u></h2>
+
+  <br>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="t1.jpeg" alt="RAHUL" style="width:100%">
+        <div class="container">
+          <h2>RAHUL SINGH</h2>
+          <p class="title"> Founder</p>
+          <p class="iiid">Email Address :- rs9012854@gmail.com</p>
+
+          <div class="wrapper">
+            <a href="https://www.facebook.com/people/Rahul-Singh/100010549838259/" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="https://twitter.com/Technical_Star_?t=XT6MwLBpyoLwxiVBSW8KZg&s=09 " class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="https://www.instagram.com/rahulsingh___official/?utm_medium=copy_link" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="#" class="icon github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="youtube.com/c/TechnicalStarRahulSingh" class="icon youtube">
+              <div class="tooltip">Youtube</div>
+              <span><i class="fab fa-youtube"></i></span>
+            </a>
+            <a href="https://www.linkedin.com/in/rahulsingh2002" class=" icon linkedin">
+              <div class="tooltip">linkedin</div>
+              <span><i class="fab fa-linkedin"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="column1">
+        <div class="card">
+          <img src="harsh1.jpg" alt="HARSH JAISWAL" style="width:100%">
+          <div class="container">
+            <h2>HARSH JAISWAL</h2>
+            <p class="title">PARTNER</p>
+            <p class="iiid">Email Address :- HKj89547@gmail.com</p>
+
+            <div class="wrapper">
+              <a href="#" class="icon facebook">
+                <div class="tooltip">Facebook</div>
+                <span><i class="fab fa-facebook-f"></i></span>
+              </a>
+              <a href="#" class="icon twitter">
+                <div class="tooltip">Twitter</div>
+                <span><i class="fab fa-twitter"></i></span>
+              </a>
+              <a href="https://www.instagram.com/harshjaiswal467/?utm_medium=copy_link" class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i></span>
+              </a>
+              <a href="#" class="icon github">
+                <div class="tooltip">Github</div>
+                <span><i class="fab fa-github"></i></span>
+              </a>
+              <a href="#" class="icon youtube">
+                <div class="tooltip">Youtube</div>
+                <span><i class="fab fa-youtube"></i></span>
+              </a>
+              <a href="#" class="icon linkedin">
+                <div class="tooltip">linkedin</div>
+                <span><i class="fab fa-linkedin"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="containerrahul">
+        <ul class="op">
+          <li><a href="Main file">Home</a></li>
+          <li><a href="About us.html">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="valuee.html">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#contactt">Contact Us</a></li>
+        </ul>
+        <p class="textr">Copyright @ 2021 | Designed by &emsp; <a href="#"> Rahul Singh &nbsp;&nbsp; AND &nbsp;&nbsp;
+            Harsh Jaiswal</a></p>
+      </div>
+
+      <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+          document.getElementById('radio' + counter).checked = true;
+          counter++;
+          if (counter > 15) {
+            counter = 1;
+          }
+        }, 3000);
+
+
+        var today = new Date().toISOString().slice(0, 16);
+
+        document.getElementsByName("book")[0].min = today;
+        document.getElementsByName("book1")[0].min = today;
+
+
+
+        function openForm() {
+            document.getElementById("myFormm").style.display = "block";
+          }
+
+        function closeForm() {
+          document.getElementById("myFormm").style.display = "none";
+        }
+
+        const loginText = document.querySelector(".title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector("form .signup-link a");
+        signupBtn.onclick = (() => {
+          loginForm.style.marginLeft = "-50%";
+          loginText.style.marginLeft = "-50%";
+        });
+        loginBtn.onclick = (() => {
+          loginForm.style.marginLeft = "0%";
+          loginText.style.marginLeft = "0%";
+        });
+        signupLink.onclick = (() => {
+          signupBtn.click();
+          return false;
+        });
+
+        function show() {
+          var p = document.getElementById("Password");
+          p.setAttribute("type", "text");
+        }
+
+        function hide() {
+          var p = document.getElementById("Password");
+          p.setAttribute("type", "password");
+        }
+
+        var pwShown = 0;
+
+        document.getElementById("eye").addEventListener(
+          "click",
+          function () {
+            if (pwShown == 0) {
+              pwShown = 1;
+              show();
+            } else {
+              pwShown = 0;
+              hide();
+            }
+          },
+          false
+        );
+
+        var password = document.getElementById("password")
+          , confirm_password = document.getElementById("confirm_password");
+
+        function validatePassword() {
+          if (password.value != confirm_password.value) {
+            confirm_password.setCustomValidity("Passwords Don't Match");
+          } else {
+            confirm_password.setCustomValidity('');
+          }
+        }
+
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
+
+      </script>
+</body>
+</html>

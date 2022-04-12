@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>About Us</title>
+
+    <style>
+        .navbar {
+
+            border-radius: 18px;
+            display: flex;
+
+        }
+
+        a:hover {
+            background-color: yellow;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            font-size: 22px;
+
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 80px 23px;
+
+        }
+
+        .navbar li a {
+            padding: 3px 10px;
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .block {
+            display: block;
+            border: none;
+            background-color: blue;
+            color: white;
+            margin: 90px -6px;
+            font-size: 22px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .block:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+        .h11 {
+            margin: 11px 155px;
+            padding: 46px 2px;
+            font-size: xxx-large;
+        }
+
+        .containerrrr {
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 16px 82px;
+            padding: 61px 33px;
+            height: 1269px;
+            width: 1687px;
+            display: flex;
+            background-color: cornsilk;
+        }
+
+        .about {
+            margin: 2px 2px;
+            padding: 2px 2px;
+            font-size: xx-large;
+        }
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+            margin: -1px 129px;
+        }
+
+        .column1 {
+            float: left;
+            width: 614px;
+            padding: 41px 1px;
+            margin: -829px 1015px;
+            width: 503px;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+            font-size: medium;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        .h {
+            margin: -61px 805px;
+            padding: 118px 1px;
+            font-size: x-large;
+        }
+
+        *:focus,
+        *:active {
+            outline: none !important;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .wrapper {
+            text-align: center;
+            margin: 21px 3px;
+        }
+
+        .wrapper .icon {
+            position: relative;
+            background-color: #ffffff;
+            border-radius: 50%;
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 22px;
+            display: inline-block;
+            align-items: center;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            color: #333;
+            text-decoration: none;
+        }
+
+        .wrapper .tooltip {
+            position: absolute;
+            top: 0;
+            line-height: 1.5;
+            font-size: 14px;
+            background-color: #ffffff;
+            color: #ffffff;
+            padding: 5px 8px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .tooltip::before {
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            background-color: #ffffff;
+            bottom: -3px;
+            left: 50%;
+            transform: translate(-50%) rotate(45deg);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .icon:hover .tooltip {
+            top: -45px;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .wrapper .icon:hover span,
+        .wrapper .icon:hover .tooltip {
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .wrapper .facebook:hover,
+        .wrapper .facebook:hover .tooltip,
+        .wrapper .facebook:hover .tooltip::before {
+            background-color: #3b5999;
+            color: #ffffff;
+        }
+
+        .wrapper .twitter:hover,
+        .wrapper .twitter:hover .tooltip,
+        .wrapper .twitter:hover .tooltip::before {
+            background-color: #46c1f6;
+            color: #ffffff;
+        }
+
+        .wrapper .instagram:hover,
+        .wrapper .instagram:hover .tooltip,
+        .wrapper .instagram:hover .tooltip::before {
+            background-color: #e1306c;
+            color: #ffffff;
+        }
+
+        .wrapper .github:hover,
+        .wrapper .github:hover .tooltip,
+        .wrapper .github:hover .tooltip::before {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        .wrapper .youtube:hover,
+        .wrapper .youtube:hover .tooltip,
+        .wrapper .youtube:hover .tooltip::before {
+            background-color: #de463b;
+            color: #ffffff;
+        }
+
+        .wrapper .linkedin:hover,
+        .wrapper .linkedin:hover .tooltip,
+        .wrapper .linkedin:hover .tooltip::before {
+            background-color: #46c1f6;
+            color: #ffffff;
+        }
+
+        .containerrahul {
+            width: 1863px;
+            margin: 51px -149px;
+            padding: 8px 22px;
+            border: 10px;
+            background: #F9F9F9;
+            display: flex;
+        }
+
+        .textr {
+            display: flex;
+            align-items: center;
+            margin: 82px -1206px;
+            padding: 9px 10px;
+            font-size: 15px;
+        }
+
+        .op {
+            display: flex;
+            list-style: none;
+            margin: 23px 521px;
+        }
+
+        .op li a {
+            padding: 20px 32px;
+            margin: 5px -5px;
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+        }
+
+        a:hover {
+            background-color: yellow;
+        }
+
+        .containera {
+            margin: 48px 836px;
+            padding: 11px 13px;
+        }
+
+        .contactt {
+            margin: 2px 2px;
+            padding: 2px 2px;
+        }
+
+        #contactt input[type="text"],
+        #contactt input[type="email"],
+        #contactt input[type="tel"],
+        #contactt input[type="url"],
+        #contactt textarea {
+            width: 369px;
+            border: 1px solid #CCC;
+            background: #FFF;
+            margin: 18px 198px;
+            padding: 10px;
+        }
+
+        .h22 {
+            margin: 30px 178px;
+            padding: 2px 2px;
+            font-size: x-large;
+        }
+
+        #contactt textarea {
+            width: 550px;
+            height: 211px;
+            margin: 24px 109px;
+        }
+
+        #contactt button[type="submit"] {
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            background: #0CF;
+            color: #FFF;
+            margin: 7px 4px;
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        #contactt {
+            background: #F9F9F9;
+            padding: 35px;
+            margin: -69px -305px;
+        }
+
+
+        ::selection {
+            background: #FF676D;
+            color: #fff;
+        }
+
+        .containerharsh {
+            max-width: 950px;
+            width: 100%;
+            overflow: hidden;
+            padding: 127px 0;
+            margin: -71px 460px;
+        }
+
+        .containerharsh .main-card {
+            display: flex;
+            width: 200%;
+        }
+
+        #two:checked~.main-card {
+            margin-left: -100%;
+        }
+
+        .containerharsh .main-card .cards {
+            width: calc(100% / 2 - 10px);
+            display: flex;
+            margin: 0 20px;
+            justify-content: space-between;
+        }
+
+        .main-card .cards .card {
+            width: calc(100% / 3 - 10px);
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .cards .card .content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cards .card .content .img {
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            padding: 3px;
+            background: #FF676D;
+            margin-bottom: 14px;
+        }
+
+        .card .content .img img {
+            height: 100%;
+            width: 100%;
+            border: 3px solid #ffff;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .card .content .name {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .card .content .job {
+            font-size: 15px;
+            color: #FF676D;
+        }
+
+        .card .content .media-icons {
+            margin-top: 10px;
+            display: flex;
+
+        }
+
+        .media-icons a {
+            text-align: center;
+            line-height: 33px;
+            height: 35px;
+            width: 35px;
+            margin: 0 4px;
+            font-size: 14px;
+            color: #FFF;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            background: #FF676D;
+            transition: all 0.3s ease;
+        }
+
+        .media-icons a:hover {
+            color: #FF676D;
+            background-color: #fff;
+            border-color: #FF676D;
+        }
+
+        .containerharsh .button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .button label {
+            height: 15px;
+            width: 15px;
+            border-radius: 20px;
+            background: #fff;
+            margin: 0 4px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="logo 1.jpg" height="200">
+        <ul>
+            <li><a href="Main file.html">Home</a></li>
+            <li><a href="About us.html">About Us</a></li>
+            <li><a href="Main file.html">Contact Us</a></li>
+            <li><a href="partner.html">Our Paterner</a></li>
+        </ul>
+
+        <button class="block">Sign Up / Login</button>
+
+    </nav>
+
+    <h1 class="h11"><u> About us</u> </h1>
+
+    <div class="containerrrr">
+        <P class="about">It is India’s largest mobility platform and one of the world’s largest ride-hailing companies,
+            serving 250+ cities across India, Australia, New Zealand, and the UK. Our website offers
+            mobility solutions by connecting customers to drivers and a wide range of vehicles, enabling convenience and
+            transparency for hundreds of millions of consumers and over 1.5 million driver-partners.
+            <br>
+            <br>
+            <u> We gives you a choize of using our amazing cars with your choize of privacy and freedom. </u>
+            <br>
+            <br>
+            <u> We Have Great Collaboration and Partnership :- Tech Mahindra ,Tata ,OLA ,Tesla ,Ford. </u>
+            <br>
+            <br>
+            Our Self Drive Cars is a self drive brand owned by ORIX, Japan’s second largest self drive car rental
+            company currently managing more than 63,000 cars in our fleet in Japan. With our, we endeavor to provide
+            Indian users the Best in World Japanese service and technology at Indian prices. Our Brand is currently
+            present in 20 Indian cities including Bangalore,
+            Pune, Mumbai, Delhi-NCR, Hyderabad, Chennai, Kolkata, Jaipur, Indore, Chandigarh, Ahmedabad, Surat, Vadodara
+            Ludhiana, Amritsar, Bhopal Goa, Dehradun, Rishikesh and Haridwar.
+            <br>
+            <br>
+            In India, Our Car Rental Brand is already the largest B2B Car Rental player in India, and having captured
+            the B2B chauffeur driven car market, entering the self-driven car market was just a matter of time for us.
+            It all started in 2016 when we at ORIX started receiving requests from users like yourself who wanted our
+            world class maintained cars but also demanded the privacy of only their loved ones. We felt that there is
+            a strong need to address this situation, and our brand Self Drive cars thus became our answer for this need
+            of our users. And now that we are here, you don’t need to look anywhere else for your need of self drive car
+            rentals – be it hatchbacks, sedans, SUVs, MUVs or luxury cars and antique cars also.
+            <br>
+            <br>
+
+            We gives you a choize of using our amazing cars with your choize of privacy and freedom, so that you can
+            start enjoying your road journey as you wish without waiting to reach your destination.
+            To top it up and be true in our endeavor, in India we available without any kilometer capping, thus offering
+            unlimited kilometers on all bookings made by you. Best things in the World do not come with an usage
+            limit, and unlimited kilometers is our way of telling you that your choize of our cars is among the best in
+            the World. This we believe will be a small step towards making you enjoy your journey to the fullest,
+            by concentrating on counting memories, not kilometers.
+
+            <br>
+            <br>
+            Having your friends and family coming over for a long weekend? Bored of driving your own vehicle and wanting
+            to try your hands on a different car? Used to owning your own car but somehow stranded without one?
+            Peak hour rush in all modes of public transport horrifying you? Or just afraid of running the risk of being
+            fleeced by local autowallahs and taxiwallahs in a new town? Whatever your reason may be,
+            We are your default choize to address all these reasons.
+
+            <br>
+            <br>
+            You can get your choize of self-drive car hand delivered at your doorstep, your office or at your airport’s
+            arrival terminal with our home and airport delivery options.
+        </P>
+
+    </div>
+
+    <h2 class="h"><u>OUR CREATIVE TEAM</u></h2>
+
+    <br>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="t1.jpeg" alt="RAHUL" style="width:100%">
+                <div class="container">
+                    <h2>RAHUL SINGH</h2>
+                    <p class="title"> Founder</p>
+                    <p class="iiid">Email Address :- rs9012854@gmail.com</p>
+
+                    <div class="wrapper">
+                        <a href="https://www.facebook.com/people/Rahul-Singh/100010549838259/" class="icon facebook">
+                            <div class="tooltip">Facebook</div>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </a>
+                        <a href="https://twitter.com/Technical_Star_?t=XT6MwLBpyoLwxiVBSW8KZg&s=09 "
+                            class="icon twitter">
+                            <div class="tooltip">Twitter</div>
+                            <span><i class="fab fa-twitter"></i></span>
+                        </a>
+                        <a href="https://www.instagram.com/rahulsingh___official/?utm_medium=copy_link"
+                            class="icon instagram">
+                            <div class="tooltip">Instagram</div>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </a>
+                        <a href="#" class="icon github">
+                            <div class="tooltip">Github</div>
+                            <span><i class="fab fa-github"></i></span>
+                        </a>
+                        <a href="youtube.com/c/TechnicalStarRahulSingh" class="icon youtube">
+                            <div class="tooltip">Youtube</div>
+                            <span><i class="fab fa-youtube"></i></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rahulsingh2002"" class=" icon linkedin">
+                            <div class="tooltip">linkedin</div>
+                            <span><i class="fab fa-linkedin"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column1">
+                <div class="card">
+                    <img src="harsh1.jpg" alt="HARSH JAISWAL" style="width:100%">
+                    <div class="container">
+                        <h2>HARSH JAISWAL</h2>
+                        <p class="title">PARTNER</p>
+                        <p class="iiid">Email Address :- HKj89547@gmail.com</p>
+
+                        <div class="wrapper">
+                            <a href="#" class="icon facebook">
+                                <div class="tooltip">Facebook</div>
+                                <span><i class="fab fa-facebook-f"></i></span>
+                            </a>
+                            <a href="#" class="icon twitter">
+                                <div class="tooltip">Twitter</div>
+                                <span><i class="fab fa-twitter"></i></span>
+                            </a>
+                            <a href="https://www.instagram.com/harshjaiswal467/?utm_medium=copy_link"
+                                class="icon instagram">
+                                <div class="tooltip">Instagram</div>
+                                <span><i class="fab fa-instagram"></i></span>
+                            </a>
+                            <a href="#" class="icon github">
+                                <div class="tooltip">Github</div>
+                                <span><i class="fab fa-github"></i></span>
+                            </a>
+                            <a href="#" class="icon youtube">
+                                <div class="tooltip">Youtube</div>
+                                <span><i class="fab fa-youtube"></i></span>
+                            </a>
+                            <a href="#" class="icon linkedin">
+                                <div class="tooltip">linkedin</div>
+                                <span><i class="fab fa-linkedin"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="containerrahul">
+                <ul class="op">
+                    <li><a href="Main file">Home</a></li>
+                    <li><a href="Main file">About</a></li>
+                    <li><a href="Main file">Services</a></li>
+                    <li><a href="Main file">Pricing</a></li>
+                    <li><a href="Main file">Blog</a></li>
+                    <li><a href="Main file">Contact Us</a></li>
+                </ul>
+                <p class="textr">Copyright @ 2021 | Designed by &emsp; <a href="#"> Rahul Singh &nbsp;&nbsp; AND
+                        &nbsp;&nbsp;
+                        Harsh Jaiswal</a></p>
+            </div>
+
+</body>
+
+</body>
+
+</html>

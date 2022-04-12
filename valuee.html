@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    div.gallery {
+        margin: 14px 15px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 429px;
+        height: 585px;
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 409px;
+        height: auto;
+        margin: 22px 13px;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    .main {
+        margin: 3px 219px;
+        padding: 13px 33px;
+
+    }
+
+    .a {
+        margin: 51px 0px;
+        padding: 2px 2px;
+    }
+
+    .Button {
+        display: block;
+        border: none;
+        background-color: yellow;
+        border-radius: 27px;
+        width: 184px;
+        color: black;
+        margin: 25px 92px;
+        font-size: 22px;
+        cursor: pointer;
+        height: 57px;
+    }
+
+    .Button:hover {
+        background: yellowgreen;
+    }
+
+    .navbar {
+
+        border-radius: 18px;
+        display: flex;
+
+    }
+
+    a:hover {
+        background-color: yellow;
+    }
+
+    .navbar ul {
+        overflow: auto;
+        font-size: 22px;
+
+    }
+
+    .navbar li {
+        float: left;
+        list-style: none;
+        margin: 80px 23px;
+
+    }
+
+    .navbar li a {
+        padding: 3px 10px;
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .block {
+        display: block;
+        border: none;
+        background-color: blue;
+        color: white;
+        margin: 90px -6px;
+        font-size: 22px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .block:hover {
+        background-color: yellow;
+        color: black;
+    }
+
+    .wrapper {
+        overflow: hidden;
+        max-width: 390px;
+        background: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .wrapper .slide-controls {
+        display: flex;
+        margin: -25px 0 10px 0;
+        justify-content: space-between;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        font-size: larger;
+        height: 60px;
+        padding: 16px 2px;
+    }
+
+    .live {
+        margin: 58px 289px;
+        font-size: xx-large;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar">
+        <img src="logo 1.jpg" height="200">
+        <ul>
+            <li><a href="Main file.html">Home</a></li>
+            <li><a href="About us.html">About Us</a></li>
+            <li><a href="Main file.html">Contact Us</a></li>
+            <li><a href="partner.html">Our Paterner</a></li>
+        </ul>
+        <button class="block">Sign Up / Login</button>
+    </nav>
+
+    <div class="live">
+        <h2>For Any Specific Car You Car Contact US On:- <a href="tel:123-456-7890">123 - 456 - 7890</a></h2>
+    </div>
+
+    <div class="main">
+
+        <div class="gallery">
+            <div class="desc">Hyundai Verna AT (D)</div>
+            <img src="hyundai-verna.webp">
+
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required />
+                    <label for="windows">₹ 8,261<br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 41,305<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 2 lakh <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">Audi A4</div>
+            <img src="audi a4.webp">
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required/>
+                    <label for="windows">₹ 70,000<br><br>1 day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 1.4 lakh<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 5.9 lakh <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">Honda City</div>
+            <img src="honda city.webp">
+
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required>
+                    <label for="windows">₹ 5,647<br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 25,000<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 50,000 <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">Audi A6</div>
+            <img src="audi a6.webp">
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required/>
+                    <label for="windows">₹ 1.50<br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 7.5 Lakh<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 14 Lakh <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">BMW 8</div>
+            <img src="BMW-8-Series.webp">
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required/>
+                    <label for="windows">₹ 1 Lakh <br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 4.8 Lakh<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 15 Lakh <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">Mahindra Marazzo</div>
+            <img src="marazzo.webp">
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required/>
+                    <label for="windows">₹ 10,000<br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 47,000<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 80,000 <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">Mahindra Scorpio</div>
+            <img src="q2tasra_1425655.webp">
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required/>
+                    <label for="windows">₹ 10,000<br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 50,000<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 1 Lakh <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">Range-Rover</div>
+            <img src="Land-Rover-Range-Rover-Velar.webp">
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required/>
+                    <label for="windows">₹ 80000<br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 39 Lakh<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 59 Lakh <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">Maruti Swift Dzire</div>
+            <img src="marutisuzuki-dzire-left-front-three-quarter2.webp">
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required/>
+                    <label for="windows">₹ 5,000<br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 22,000<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 59,000 <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">Lamborghini Hurancan Evo</div>
+            <img src="Lamborghini Hurancan Evo.webp">
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required />
+                    <label for="windows">₹ 2lakh<br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 10 Lakh<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 50 Lakh <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">Skoda Slavia</div>
+            <img src="Skoda Slavia.webp">
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required/>
+                    <label for="windows">₹ 4.5 Lakh<br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 22.5 lakh <br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 45 Lakh <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">Jeep Compass</div>
+            <img src="Jeep Compass.webp">
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required/>
+                    <label for="windows">₹ 5 Lakh<br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 23.4 Lakh<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 10 Lakh<br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button> 
+             </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">MG Hector</div>
+            <img src="hector.webp">
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required />
+                    <label for="windows">₹ 25000<br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 1.25 Lakh<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 2.5 Lakh <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">Kia Carens</div>
+            <img src="Kia Carens.webp">
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required/>
+                    <label for="windows">₹ 8261<br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 12141<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 19656 <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">Mahindra XUV700</div>
+            <img src="Mahindra XUV700.webp">
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required/>
+                    <label for="windows">₹ 90,000<br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 4.5 Lakh<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 20 Lakh <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="desc">Mercedes-Benz-E-Class</div>
+            <img src="Mercedes-Benz-E-Class.webp">
+            <div class="wrapper">
+                <form>
+                <div class="slide-controls">
+                    <input type="radio" id="windows" name="os" required/>
+                    <label for="windows">₹ 1 lakh <br><br>1 Day</label>
+
+                    <input type="radio" id="mac" name="os" />
+                    <label for="mac">₹ 4.8 Lakh<br><br>5 Days</label>
+
+                    <input type="radio" id="linux" name="os" />
+                    <label for="linux">₹ 9 Lakh <br><br>10 Days</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <button class="Button"><a>Book Now</a></button>
+            </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
